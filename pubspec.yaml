@@ -1,0 +1,5 @@
+name: dartsnippets
+description: Snippets de código mostrando como usar recursos do dart.
+
+dependencies:
+    http: ^0.12.2

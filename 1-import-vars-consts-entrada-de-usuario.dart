@@ -21,6 +21,7 @@ main() {
  * - Literais de strings também podem ser declarados com "", além de ''.
  * - Use stdin.readLineSync() para ler entradas de usuário no terminal.
  * - Use .trim() para remover espaços antes e depois da string.
+ * - stdin.readLineSync recebe o parâmetro nomeado encoding.
  * - Execute o código no terminal usando: dart codigo.dart
  * - Utilize F2 para refatorar/renomear variáveis no vscode.
  */
