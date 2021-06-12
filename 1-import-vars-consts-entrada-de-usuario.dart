@@ -3,8 +3,8 @@ import 'dart:io';
 
 main() {
     print('1 + 1 = ?');
-    var valorInserido = stdin.readLineSync(encoding: Encoding.getByName('utf-8'));
-    valorInserido = valorInserido.trim();
+    String? valorInserido = stdin.readLineSync(encoding: Encoding.getByName('utf-8')!);
+    valorInserido = valorInserido!.trim();
     const valorCorreto = "2";
     final texto = valorInserido == valorCorreto ? 'Acertou!!' : 'Errou :(';
     print(texto);
@@ -12,6 +12,8 @@ main() {
 
 /**
  * Conclusões:
+ * - Use String? para declarar uma String que pode receber uma String ou o valor null.
+ * - A exclamação posfixa (valorInserido!.trim()) pega a expressão à esquerda e faz cast dela para versão não null do tipo declarado.
  * - Use import para importar código.
  * - Tipo de retorno de main é void, mas pode ser omitido.
  * - Use var para declarar variável cujo tipo será inferido.
